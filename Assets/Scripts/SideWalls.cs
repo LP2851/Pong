@@ -15,7 +15,7 @@ public class SideWalls : MonoBehaviour {
 	}
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        if (hitInfo.name == "Ball")
+        if (hitInfo.name == "Ball" || hitInfo.name == "Ball(Clone)")
         {
             string wallName = transform.name;
             GameManager.Score(wallName);
