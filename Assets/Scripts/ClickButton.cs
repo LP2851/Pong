@@ -30,6 +30,11 @@ public class ClickButton : MonoBehaviour {
         SceneManager.LoadScene("Scene 5");
     }
 
+    public void GoToScene6()
+    {
+        SceneManager.LoadScene("Scene 6");
+    }
+
     public void GotoMainMenu()
     {
         SceneManager.LoadScene("MainMenu");

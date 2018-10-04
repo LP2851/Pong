@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     private static int PlayerScore1;
     private static int PlayerScore2;
+    public int winVal = 10;
     public GUISkin layout;
     
     GameObject theBall;
@@ -48,12 +49,12 @@ public class GameManager : MonoBehaviour
             theBall.SendMessage("RestartGame", 0.5f, SendMessageOptions.RequireReceiver);
         }
 
-        if (PlayerScore1 == 10)
+        if (PlayerScore1 >= winVal)
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER ONE WINS");
             theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
         }
-        else if (PlayerScore2 == 10)
+        else if (PlayerScore2 >= winVal)
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER TWO WINS");
             theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);

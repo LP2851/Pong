@@ -340,7 +340,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Pong 1.1a
+  m_Text: 'Pong 1.2b
+
+    Added Mayhem pong and GitHub support.
+
+
+    Pong 1.1a
 
     Implemented the Blockers Mode in the game and updated the main menu.
 

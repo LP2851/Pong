@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour {
 
     public GameObject ball;
-    private int x = 0;
+    //private int x = 0;
     // Use this for initialization
 	void Start () {
         InvokeRepeating("SpawnBalls", 1f, 2.5f);
